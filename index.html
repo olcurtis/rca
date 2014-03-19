@@ -57,37 +57,54 @@
       margin-top: -20px;
       padding: 25px;
     }
+       /* Button*/
+    .center-button {
+      text-align: center;
+      vertical-align: middle;
+      padding: 2%;
+      margin-top: 0%;
+      margin-right: auto;
+      margin-bottom: 0;
+      margin-left: auto;
+      width: 100%;
+}
+  /* footer */
+footer {
+  background: #E4A010;
+  height: 140px;
+  width: 100%;
+}
 
 	</style>
-    </head>
-    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+</head>
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 
- <body>
+<body>
   <div class="header">
 	 <h1 class="featurette-heading">RCA Passive House Project</h1>
 	 <h1 class="featurette-heading">in the Palisades neighborhood.</h1>
   </div>
 
-  <div id="myCarousel" class="carousel slide">
-    <div class="carousel-inner">
-       <div class="item active">
-         <img src="img/mockup.jpg" width="100%">
-            <div class="container">
+<div id="myCarousel" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="img/mockup.jpg" width="100%">
+          <div class="container">
             <div class="carousel-caption">
               <h1 class="featurette-heading" align="center">Wall Assembly</h1>
               <p class="muted" align="center">October 1, 2013</p>
             </div>
           </div>
-        </div>
-        <div class="item">
-          <img src="img/blocks.jpg" width="100%">
+    </div>
+      <div class="item">
+        <img src="img/blocks.jpg" width="100%">
           <div class="container">
             <div class="carousel-caption">
               <h1 class="featurette-heading" align="center">Unloading the blocks</h1>
               <p class="muted" align="center">December 13, 2013</p>
             </div>
           </div>
-        </div>
+      </div>
         <div class="item">
           <img src="img/foundation.jpg" width="100%">
           <div class="container">
@@ -136,7 +153,7 @@
       </div>
       <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
       <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
-    </div>
+</div>
 
 <!-- /START VIDEO -->
 <div class="video">
@@ -145,37 +162,44 @@
 
 	<!-- /START TIMELINEJS -->
 <div class="container">
-<div class="featurette">
+<div class="featurette" style="margin-bottom:40px">
 <div id="timeline-embed"></div>
-    <script type="text/javascript">
-        var timeline_config = {
-            width:              '100%',
-            height:             '600',
-            source:             'https://docs.google.com/spreadsheet/pub?key=0As0nRemoUZO7dGZyb20yZWxjM2VDWktRRTZsWldkMnc&output=html',
-            embed_id:           'timeline-embed',               //OPTIONAL USE A DIFFERENT DIV ID FOR EMBED
-            start_at_end:       false,                          //OPTIONAL START AT LATEST DATE
-            start_at_slide:     '3',                            //OPTIONAL START AT SPECIFIC SLIDE
-            start_zoom_adjust:  '0',                            //OPTIONAL TWEAK THE DEFAULT ZOOM LEVEL
-            hash_bookmark:      true,                           //OPTIONAL LOCATION BAR HASHES
-            font:               'BreeSerif-OpenSans',             //OPTIONAL FONT
-            debug:              true,                           //OPTIONAL DEBUG TO CONSOLE
-            lang:               'en',                           //OPTIONAL LANGUAGE
-            maptype:            'toner-lines',                   //OPTIONAL MAP STYLE
-            css:                'css/timeline.css',     //OPTIONAL PATH TO CSS
-            js:                 'js/timeline-min.js'    //OPTIONAL PATH TO JS
-        }
-    </script>
-    <script type="text/javascript" src="js/storyjs-embed.js"></script>
+  <script type="text/javascript">
+    var timeline_config = {
+      width:              '100%',
+      height:             '600',
+      source:             'https://docs.google.com/spreadsheet/pub?key=0As0nRemoUZO7dGZyb20yZWxjM2VDWktRRTZsWldkMnc&output=html',
+      embed_id:           'timeline-embed',               //OPTIONAL USE A DIFFERENT DIV ID FOR EMBED
+      start_at_end:       false,                          //OPTIONAL START AT LATEST DATE
+      start_at_slide:     '3',                            //OPTIONAL START AT SPECIFIC SLIDE
+      start_zoom_adjust:  '0',                            //OPTIONAL TWEAK THE DEFAULT ZOOM LEVEL
+      hash_bookmark:      true,                           //OPTIONAL LOCATION BAR HASHES
+      font:               'BreeSerif-OpenSans',             //OPTIONAL FONT
+      debug:              true,                           //OPTIONAL DEBUG TO CONSOLE
+      lang:               'en',                           //OPTIONAL LANGUAGE
+      maptype:            'toner-lines',                   //OPTIONAL MAP STYLE
+      css:                'css/timeline.css',     //OPTIONAL PATH TO CSS
+      js:                 'js/timeline-min.js'    //OPTIONAL PATH TO JS
+    }
+  </script>
+  <script type="text/javascript" src="js/storyjs-embed.js"></script>
 </div>
 </div>
+
 <!-- /END TIMELINEJS -->
+
+<!-- /FOOTER -->
+<footer> 
+<!-- /BUTTON -->
+<div class="center-button">
+<a href="http://robertcurtisarchitects.com/" class="btn btn-default">robertcurtisarchitects.com</a>  
+<!-- /END BUTTON -->
+</div>
+</footer>
 
 <!-- Le javascript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
   <script src="js/bootstrap.min.js"></script>
-
 </body>
-
-
 </html>
